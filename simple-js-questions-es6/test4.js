@@ -24,7 +24,11 @@ const customConfiguration = {
 //   showPageNumbers: false,
 //   fontSize: 14,
 // };
-
+var confObject = templateConfiguration;
+for (var propertyName in customConfiguration)
+{
+	confObject[propertyName] = customConfiguration[propertyName];
+}
 
 // 2. (optional) If we wanted to ensure that no other properties would be added or removed in the templateConfiguration object
 // how would we do that using only built-in JS functionality?

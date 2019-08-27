@@ -7,3 +7,4 @@ function greetMe(name) {
 greetMe('George');
 
 // 1. What name will it print and why
+// Undefined since variable declared with let do not belong to the window object
